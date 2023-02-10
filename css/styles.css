@@ -1,0 +1,180 @@
+:root {
+  --main-text-color: #2a2a2a;
+  --light-text-color: #ffffff;
+  --dark-text-color: #000000;
+  --accent-color: #839c04;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  /* width: 1880px; */
+  max-width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+button {
+  width: 140px;
+  height: 50px;
+  font-family: 'Mulish';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.dark-button {
+  background: var(--main-text-color);
+  color: var(--light-text-color);
+}
+
+.light-button {
+  background: var(--light-text-color);
+  color: var(--main-text-color);
+}
+
+/*header*/
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.header .list {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts p {
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+/*hero*/
+
+.hero-image {
+  max-width: 1880px;
+  position: relative;
+}
+
+.hero-text {
+  height: 283px;
+  width: 500px;
+  position: absolute;
+  left: 467px;
+  top: 466px;
+  background: var(--light-text-color);
+  color: var(--main-text-color);
+  border-radius: 30px;
+  padding: 30px;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 30px;
+  padding-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+}
+
+.hero-buttons {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*design*/
+.design {
+  margin: 120px auto;
+  padding: 0 120px;
+}
+
+.design-title {
+  font-family: 'Cormorant Unicase',
+    serif;
+  font-size: 60px;
+  padding-bottom: 50px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+}
+
+.design-text {
+  width: 825px;
+}
+
+.design-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design-image {
+  margin: 60px auto 120px auto
+}
