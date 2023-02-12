@@ -14,7 +14,9 @@
   <body>
     <header class="header container">
       <a class="link" href="./index.html"
-        ><img src="./assets/images/begma-logo.png" alt="logo" />
+        ><svg>
+          <use href="./assets/icons/icons-sprite.svg#begma-logo"></use>
+        </svg>
       </a>
       <ul class="list">
         <li class="menu-item"><a class="link menu-link" href="./index.html">про нас</a></li>
@@ -65,7 +67,7 @@
       <p class="services-title">Грамотне планування, швидке і якісне виконання</p>
     </div>
     <div class="services-scrolled">
-      <ul class="services-list">
+      <ul class="services-list list">
         <li class="services-item">
           <img class="services-image" src="./assets/images/services-1.png" alt="services-image" />
           <button class="dark-button-transparent">Перейти</button>
@@ -245,84 +247,125 @@
         проектуванні ландшафтного дизайну потрібно враховувати розміри всіх об'єктів на ділянці.
       </p>
     </div>
-    <div>
-      <form autocomplete="off">
-        <h2>Залишайте заявку та отримайте знижку на проектування 10%</h2>
+    <div class="container connection">
+      <form autocomplete="off" class="connection-form">
+        <p class="connection-title">Залишайте заявку та отримайте знижку на проектування 10%</p>
         <input type="text" name="name" placeholder="Ім’я" />
         <input type="email" name="email" placeholder="E-mail" />
         <input type="tel" name="phone" placeholder="+380 | Номер телефону" />
-        <input type="range" name="budget" placeholder="Який в вас бюджет?" />
-        <button type="submit">Відправити</button>
-        <p>Я погоджуюсь з Політикою Конфиденційності</p>
+        <label class="budget-range"
+          >Який в вас бюджет ?
+          <input type="range" name="budget" />
+        </label>
+        <button class="dark-button" type="submit">Відправити</button>
+        <label class="checkbox">
+          <input type="checkbox" />
+          Я погоджуюсь з <span class="policy"><a>Політикою Конфиденційності</a></span>
+        </label>
       </form>
-      <div>
-        <h2>Часті питання</h2>
-        <ul>
-          <li>
-            <h4>Як зрозуміти який дизайн ландшафту мені більше підходить?</h4>
-            <p>
+      <div class="connection-faq">
+        <p class="connection-title">Часті питання</p>
+        <ul class="list">
+          <li class="connection-item">
+            <div class="connection-faq-title">
+              <img src="./assets/icons/arrow-up.svg" alt="arrow-up" role="button" />
+
+              <p class="question">Як зрозуміти який дизайн ландшафту мені більше підходить?</p>
+            </div>
+            <p class="question-text">
               Сучасний ландшафтний дизайн передбачає прикраса великих земельних територій, паркових
               зон та присадибних ділянок. Він стоїть на стику рослинництва, архітектури та
               будівництва. Раніше цей спосіб облагородити наділ був доступний тільки забезпеченим
               домовласникам, але сьогодні ситуація змінилася.
             </p>
           </li>
-          <li>
-            <h4>Скільки потрібно часу для благоустрою ділянки?</h4>
+          <li class="connection-item">
+            <div class="connection-faq-title">
+              <img src="./assets/icons/arrow-down.svg" alt="arrow-down" role="button" />
+
+              <p class="question">Скільки потрібно часу для благоустрою ділянки?</p>
+            </div>
             <p></p>
           </li>
-          <li>
-            <h4>Чи даєте ви гарантії?</h4>
+          <li class="connection-item">
+            <div class="connection-faq-title">
+              <img src="./assets/icons/arrow-down.svg" alt="arrow-down" role="button" />
+
+              <p class="question">Чи даєте ви гарантії?</p>
+            </div>
             <p></p>
           </li>
-          <li>
-            <h4>Чи займаєтеся реалізацією готового проекту?</h4>
+          <li class="connection-item">
+            <div class="connection-faq-title">
+              <img src="./assets/icons/arrow-down.svg" alt="arrow-down" role="button" />
+
+              <p class="question">Чи займаєтеся реалізацією готового проекту?</p>
+            </div>
             <p></p>
           </li>
         </ul>
       </div>
     </div>
-    <footer>
-      <img src="." alt="" />
-      <ul>
-        <li>про нас</li>
-        <li>послуги</li>
-        <li>портфоліо</li>
-        <li>контакти</li>
-      </ul>
-      <ul>
-        Контакти
-        <li>+38(050)502-45-11</li>
-        <li>+38(050)959-32-97</li>
-        <li>ld@greenroom.kiev.ua</li>
-      </ul>
-      <ul>
-        Графік роботи
-        <li><span>Пн-Сб: </span> 09:00 - 19:00</li>
-        <li><span>Нд: </span> Вихідний</li>
-      </ul>
-      <ul>
-        <li>svg</li>
-        <li>svg</li>
-        <li>svg</li>
-      </ul>
-      <div>
-        <div>
-          <img src="." alt="" />
-          <p>Вгору</p>
+    <footer class="container footer">
+      <div class="footer-contacts">
+        <a class="link" href="./index.html"
+          ><img src="./assets/images/begma-logo.png" alt="logo" />
+        </a>
+        <ul class="list">
+          <li class="menu-item"><a class="link menu-link" href="./index.html">про нас</a></li>
+          <li class="menu-item"><a class="link menu-link" href="./index.html">послуги</a></li>
+          <li class="menu-item"><a class="link menu-link" href="./index.html">портфоліо</a></li>
+          <li class="menu-item"><a class="link menu-link" href="./index.html">контакти</a></li>
+        </ul>
+        <ul class="list">
+          <p class="footer-title">Контакти</p>
+          <li class="contacts-item">+38(050)502-45-11</li>
+          <li class="contacts-item">+38(050)959-32-97</li>
+          <li class="contacts-item">ld@greenroom.kiev.ua</li>
+        </ul>
+        <ul class="list">
+          <p class="footer-title">Графік роботи</p>
+          <li class="schedule"><span>Пн-Сб: </span> 09:00 - 19:00</li>
+          <li class="schedule"><span>Нд: </span> Вихідний</li>
+        </ul>
+        <ul class="list socials">
+          <li>
+            <svg>
+              <use href="./assets/icons/icons-sprite.svg#telegram-icon"></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+              <use href="./assets/icons/icons-sprite.svg#viber-icon"></use>
+            </svg>
+          </li>
+          <li>
+            <svg>
+              <use href="./assets/icons/icons-sprite.svg#whatsapp-icon"></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="footer-navigation">
+          <div class="up">
+            <img src="./assets/icons/arrow-up.svg" alt="arrow-up" role="button" />
+            <p class="up-text">Вгору</p>
+          </div>
+          <div class="languages">
+            <a class="link menu-link" href="./index.html">UA</a>
+            <p>/</p>
+            <a class="link menu-link" href="./index.html">RU</a>
+          </div>
         </div>
-        <div>
-          <button>UA</button>
-          <p>/</p>
-          <button>RU</button>
-        </div>
-        <hr />
-        <div>
-          <img src="." alt="" />
+      </div>
+      <hr />
+      <div class="footer-policy">
+        <div class="seok">
+          <img src="./assets/images/seok-logo.png" alt="arrow-down" role="button" />
+
           <p>Розробка і просування.</p>
         </div>
         <p>© 2023 — Begma.ua</p>
-        <p>Політика конфіденційності</p>
+        <a>Політика конфіденційності</a>
       </div>
     </footer>
   </body>
